@@ -25,15 +25,23 @@ const submain = (choice) => {
             userchoice.innerHTML = value
             randerUser.innerHTML = ys
             randerPc.innerHTML = cs
-            if(cs === 5 ){
-                stat.innerHTML = "You lose! HAHAHAHAHAHAHAHAHAHAHAHAHA"
-                document.getElementById(choice).onclick = ()=> {}
-            }else if(ys === 5){
-                stat.innerHTML = "You win, GO FUCK YOUR SELF WITH AN UMBRELLA"
-                document.getElementById(choice).onclick = ()=> {}
+            if(cs === 2 ){
+                stat.innerHTML = "You lose! HAHAHAHAHAHAHAHAHAHAHAHAHA";
+                setTimeout(function(){
+                    window.location.reload()
+                },3000)
+
+            }else if(ys === 2){
+                stat.innerHTML = "You win, GO FUCK YOUR SELF WITH AN UMBRELLA";
+                setTimeout(function(){
+                    window.location.reload()
+                },500)
+
+                
             }
         }      
 }
+
 const compare = (a,b) => {
 
     if (a === b){
